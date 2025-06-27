@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokemon Detail</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputName">
+        <input
+          type="text"
+          name=""
+          id="pokmonName"
+          placeholder="Enter Pokemon Name"
+        />
+        <button id="btn" onclick="fetchData()">Get Pokemon</button>
+        <br />
+      </div>
+      <div class="Pokdata">
+        <div class="imgcon">
+          <div id="loader" class="pokeball-loader" style="display: none"></div>
+          <img
+            src="img\istockphoto-1162198273-612x612.jpg"
+            alt="Pokemon Sprite"
+            id="PokemonImg"
+            style="display: none"
+          />
+        </div>
+        <div class="list">
+          <h3 id="height">...</h3>
+          <h3 id="weight">...</h3>
+          <h3 id="number">...</h3>
+          <h3 id="power">...</h3>
+          <div id="typeBadges"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
