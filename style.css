@@ -234,8 +234,11 @@ body {
     flex-direction: column;
     padding: 1rem 0;
   }
+  .container .Pokdata .list h3 {
+    line-height: 2;
+  }
   .container .Pokdata .imgcon {
-    margin-right: 0;
+    margin-right: 4rem;
     margin-bottom: 2rem;
     width: 80vw;
     height: auto;
@@ -245,13 +248,34 @@ body {
     height: auto;
   }
 }
+@media (max-width: 500px) {
+  .container .Pokdata .imgcon {
+    margin-right: 3rem;
+  }
+}
 @media (max-width: 600px) {
   .container .inputName input {
     width: 60vw;
     font-size: 0.8rem;
   }
+  .container .Pokdata .list h3 {
+    line-height: 1.5;
+  }
+  .container .Pokdata .imgcon {
+    margin-right: 1rem;
+    margin-left: 2rem;
+  }
   .container .Pokdata .imgcon img {
     width: 90vw;
     height: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .container .Pokdata {
+    width: 100vw;
+    height: auto;
+
+    padding: 1rem 0;
   }
 }
